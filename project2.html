@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time Bus Arrival Display system using Raspberry Pi, ESP32, MQTT, and a weather forecast display.">
+    <title>Real-time Bus Arrival Display</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Real-time Bus Arrival</a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About me</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Showcase Section -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="page-title">Real-time Bus Arrival Display</h1>
+            </div>
+
+            <div class="project-description">
+                <h2>Function</h2>
+                <p>Electronically very simple system, but maybe one of my favourites because I actually use it whenever I leave the house. No need to pick up my phone, go to the Reittiopas app, submit my location and destination, and then see when the buses arrive. I just look at the display in the hallway (LCD with I2C, please give me work so I can justify getting a real screen) and I know exactly how many minutes until my bus arrives.</p>
+                <div class="project-images">
+                    <div class="project-image-container">
+                        <img src="images/bus1.jpg" alt="Bus Arrival Display System">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/bus2.jpg" alt="Raspberry Pi Bus Fetching Data">
+                        <p class="image-description">Kuvausteksti</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden4.jpg" alt="MQTT Bus Data">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                </div>
+                <h2>How it works</h2>
+                <p>So it works by using a Raspberry Pi to run a Python script to fetch the bus data via an API, calculates the difference between the arrival time and the current time, so it knows to show me how many minutes till the bus arrives. I prefer this over seeing the time when the bus arrives because it's simpler. Then, it publishes the data in my MQTT server where my ESP32 and Home Assistant get their numbers.</p>
+
+                <p>The screen also displays the weather forecast, but you can read more about it <a href="project3.html">here</a> (or don't, it's basically the exact same, but with weather).</p>
+            </div>
+
+            <!-- Contact Me Button -->
+            <div class="contact-btn-container">
+                <a href="index.html#contact" class="btn">Contact Me</a>
+                <a href="projects.html" class="btn">All projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; contact me at vilho.toivanen@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electricity price scraping system using Python and MQTT to track electricity prices and automate devices based on price.">
+    <title>Electricity Price Scraping</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Electricity Price Scraping</a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About me</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Showcase Section -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="page-title">Electricity Price Scraping</h1>
+            </div>
+
+            <div class="project-description">
+                <h2>Function</h2>
+                <p>I've got a Python script running once every day at 15:01 (the next day's electricity prices are typically published by that time at the latest; <a href="https://data.nordpoolgroup.com/auction/day-ahead/prices?deliveryDate=today&currency=EUR&aggregation=DeliveryPeriod&deliveryAreas=FI" target="_blank">Nordpool Electricity Price Data</a>). It then parses the data, and once again publishes it to my MQTT server.</p>
+
+                <p>Now that that's been done, I could automate any and all devices individually or through Home Assistant to run based on the price of electricity, say, only charge the electric car when the price is lower than X or charge it when the price is at its lowest compared to the known later prices, or both of these. Or run some appliances at certain times.</p>
+
+                <p>Though, I have no electric car (nor a car) or use much electricity anyway, so much there's barely any real point for me to do any of this other than out of curiosity. That's why I'm simply using an ESP32 to light up some LEDs indicating the prices, mostly for fun. And to make sure the system works – which it does (phew).</p>
+
+                <div class="project-images">
+                    <div class="project-image-container">
+                        <img src="images/garden2.jpg" alt="Electricity Price Scraping">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden3.jpg" alt="Python Script Fetching Prices">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden4.jpg" alt="LED Display for Prices">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                </div>
+
+                <h2>Future Enhancements</h2>
+                <p>In the future, I could be scraping the data of electricity price futures (you know the stockmarket thing) and make decisions based on them. It would be better for decision-making to see further into the future than just half a day.</p>
+            </div>
+
+            <!-- Contact Me Button -->
+            <div class="contact-btn-container">
+                <a href="index.html#contact" class="btn">Contact Me</a>
+                <a href="projects.html" class="btn">All projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; contact me at vilho.toivanen@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

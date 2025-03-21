@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automated Garden Control System using various IoT components like ESP32, sensors, and MQTT integration.">
+    <title>Automated Garden Control</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Automated garden control</a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About me</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Showcase Section -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="page-title"></h1>
+            </div>
+
+            <div class="project-description">
+                <h2>Overview</h2>
+                <p>The system I have built controls the garden lights with MOSFETs and relays. I control the lights via Homeassistant or use a physical switch. Right now I make my records such as lighttime, watering and temperature on paper, but this too, could be easily automated (once I find the time and will)</p>
+                
+            <!-- Inside the project description -->
+            <div class="project-images">
+                <div class="project-image-container">
+                    <img src="images/garden1.jpg" alt="Garden Control System">
+                    <p class="image-description">Kuvausteksti</p>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/garden2.jpg" alt="Garden Control System Wiring">
+                    <p class="image-description">Kuvausteksti.</p>
+                </div>
+                <div class="project-image-container">
+                    <img src="images/garden3.jpg" alt="Sensors and Setup">
+                    <p class="image-description">Kuvausteksti.</p>
+                </div>
+            </div>
+
+                <p>It works fine, but there’s a lot of room for improvement. In the future, I want to transition to a fully hydroponic system - no soil, just water with nutrients. This would maximize space efficiency and allow for better control.</p>
+<!-- Future Goals Image and Text -->
+            <div class="future-goals-container">
+                <div class="future-goals-text">
+                    <h2 class="section-title">Thoughts and improvement</h2>
+                    <p>The final system could include:</p>
+                    <ul class="section-text">
+                        <li>Pumps & solenoid valves to automate water & nutrient flow.</li>
+                        <li>Plumbing system integration so the only manual task would be refilling the nutrient tank.</li>
+                        <li>Advanced monitoring: pH, temperature, humidity, pressure, and water flow.</li>
+                        <li>PAR sensor (measures the Photosynthetic Active Radiation—different from LUX).</li>
+                        <li>Camera recognition to track growth and fruit-bearing stages.</li>
+                    </ul>
+                    
+                    <p>And of course, fail-safes. The system should:</p>
+                    <ul class="section-text">
+                        <li>Detect and prevent failures.</li>
+                        <li>Monitor weak points in real time.</li>
+                        <li>If failure occurs, automatically control the damage.</li>
+                    </ul>
+                </div>
+
+                <div class="future-goals-img">
+                    <img src="images/garden3.jpg" alt="Hydroponic Future Setup" class="project-img">
+                </div>
+            </div>
+
+
+                <p>But that’s all for the future -once I’m no longer living in a rental, my girlfriend trusts my builds enough to tap into the plumbing, and the garden isn’t in our bedroom.</p>
+            </div>
+
+            <!-- Contact Me Button -->
+            <div class="contact-btn-container">
+                <a href="index.html#contact" class="btn">Contact Me</a>
+                <a href="projects.html" class="btn">All projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p> contact me at vilho.toivanen@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

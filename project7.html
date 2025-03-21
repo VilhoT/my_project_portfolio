@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Automated light control system using ESP32, MQTT, and Home Assistant.">
+    <title>Light Control & Automation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Light Control & Automation</a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About me</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Showcase Section -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="page-title">Light Control & Automation</h1>
+            </div>
+
+            <div class="project-description">
+                <h3>System Overview</h3>
+                <p>I built the lights in our living room and integrated them into Home Assistant. Like most of my remote projects, this setup uses my MQTT broker to communicate between the ESP32 and the Home Assistant interface. I’ve also set up physical switches for manual control.</p>
+
+                <h3>Functionality</h3>
+                <p>The lights can be turned on, off, or dimmed to any level in between - well, within the 255 steps of the duty cycle.</p>
+                <div class="project-images">
+                    <div class="project-image-container">
+                        <img src="images/garden2.jpg" alt="Weather Display Setup">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden3.jpg" alt="Weather Data Fetching via Raspberry Pi">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden4.jpg" alt="ESP32 Receiving Weather Data">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                </div>
+        
+                <p>I have also added a human presence sensor, which activates just a few sets of LEDs at 10% brightness when it detects a presence between 23.00-6.00. This way I don't get blinded by the darkness or the brightness should I have the need to go to the kitchen at night.</p>
+            </div>
+
+            <!-- Contact Me Button -->
+            <div class="contact-btn-container">
+                <a href="index.html#contact" class="btn">Contact Me</a>
+                <a href="projects.html" class="btn">All projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; contact me at vilho.toivanen@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liquid level sensing system using LDR to monitor biowaste tank levels and alert users when the tank is full.">
+    <title>Liquid Level Sensoring</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Liquid Level Sensoring</a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About me</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Showcase Section -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="page-title">Liquid Level Sensoring</h1>
+            </div>
+
+            <div class="project-description">
+                <h2>Problem & Solution</h2>
+                <p>My parents got a new indoor compost/wc system at our cottage, which is great. However, there was a problem: The liquid biowaste (urine) tanks, located in the cellar, would overflow if not emptied often enough. The task of checking the tank level manually was inconvenient, and of course, overflow was a serious problem.</p>
+
+                <p>Being there with bright ideas and solutions, I considered various approaches. Should I use load cells to calculate the tank level? What about placing a liquid level sensor inside? Or even use an ultrasound sensor to monitor the liquid level from the outside? But not having all the parts on hand, putting something directly into the tank, and considering cost, I went with a simpler approach.</p>
+
+                <p>I ended up using an LDR (Light Dependent Resistor) placed on the opposite side of the almost see-through tank. The idea was to make a LED blink every 2 minutes near the top of the tank. If the liquid level rose too high, the resistance of the LDR would change, triggering another LED to blink rapidly in the house near the toilet door, notifying the users that the tank needed to be emptied.</p>
+
+                <div class="project-images">
+                    <div class="project-image-container">
+                        <img src="images/garden2.jpg" alt="Liquid Level Sensor Setup">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden3.jpg" alt="LDR Resistance Change">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden4.jpg" alt="LED Alert">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Me Button -->
+            <div class="contact-btn-container">
+                <a href="index.html#contact" class="btn">Contact Me</a>
+                <a href="projects.html" class="btn">All projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>contact me at vilho.toivanen@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

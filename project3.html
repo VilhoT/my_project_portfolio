@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Forecast Display system using Raspberry Pi, ESP32, MQTT to display weather information and warnings.">
+    <title>Weather Forecast Display</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Weather Forecast Display</a>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="about.html" class="nav-link">About me</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Showcase Section -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="page-title">Weather Forecast Display</h1>
+            </div>
+
+            <div class="project-description">
+                <h2>Function</h2>
+                <p>I mean, this one is pretty self-explanatory. I display the weather forecast on an LCD in the hallway. I've customized it to my own tastes—it tells me the current temperature and warns me if it's going to rain today and when.</p>
+
+                <p>It works by the same principle as the <a href="project2.html">Bus Real-time Arrival System</a> (link for that) and shares the display.</p>
+
+                <p>In simple terms, the script gets weather data, passes it to a data server, which forwards the data to my displays.</p>
+
+                <div class="project-images">
+                    <div class="project-image-container">
+                        <img src="images/garden2.jpg" alt="Weather Display Setup">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden3.jpg" alt="Weather Data Fetching via Raspberry Pi">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                    <div class="project-image-container">
+                        <img src="images/garden4.jpg" alt="ESP32 Receiving Weather Data">
+                        <p class="image-description">Kuvausteksti.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Me Button -->
+            <div class="contact-btn-container">
+                <a href="index.html#contact" class="btn">Contact Me</a>
+                <a href="projects.html" class="btn">All projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; contact me at vilho.toivanen@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
